@@ -1,0 +1,61 @@
+.sign-in {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(#f5894f, #f9b895);
+}
+
+#sign-in__logo {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 70%;
+  max-width: 500px;
+  height: 55%;
+  padding: 1.5em;
+
+  border-radius: 2em;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sign-in__form--field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#sign-in__form--link {
+  align-self: flex-start;
+  text-decoration: "none";
+  color: #727482;
+}
+
+#sign-in__form--submit {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: rgba(44, 59, 72, 1);
+}
+
+#sign-in__form--submit :hover {
+  background-color: rgba(44, 59, 72, 0.8);
+}
+
+@media only screen and (min-width: 600px) {
+  .sign-in__form {
+    height: fit-content;
+  }
+}
